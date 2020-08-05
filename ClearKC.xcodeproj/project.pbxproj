@@ -1,0 +1,338 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06C1538324DAA87B00E6711E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C1538224DAA87B00E6711E /* Foundation.framework */; };
+		06C1538D24DAA87B00E6711E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 06C1538C24DAA87B00E6711E /* main.m */; };
+		06C1539624DAA9DD00E6711E /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C1539524DAA9DD00E6711E /* libsqlite3.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		06C1537F24DAA87B00E6711E /* ClearKC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ClearKC; sourceTree = BUILT_PRODUCTS_DIR; };
+		06C1538224DAA87B00E6711E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		06C1538724DAA87B00E6711E /* control */ = {isa = PBXFileReference; lastKnownFileType = text; path = control; sourceTree = "<group>"; };
+		06C1538824DAA87B00E6711E /* monkeydev.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = monkeydev.entitlements; sourceTree = "<group>"; };
+		06C1538B24DAA87B00E6711E /* 0xdeadfa11 */ = {isa = PBXFileReference; lastKnownFileType = text; path = 0xdeadfa11; sourceTree = "<group>"; };
+		06C1538C24DAA87B00E6711E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		06C1538F24DAA87B00E6711E /* ClearKC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ClearKC-Prefix.pch"; path = "../ClearKC-Prefix.pch"; sourceTree = "<group>"; };
+		06C1539524DAA9DD00E6711E /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/usr/lib/libsqlite3.tbd; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06C1537C24DAA87B00E6711E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06C1539624DAA9DD00E6711E /* libsqlite3.tbd in Frameworks */,
+				06C1538324DAA87B00E6711E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06C1537624DAA87B00E6711E = {
+			isa = PBXGroup;
+			children = (
+				06C1538424DAA87B00E6711E /* ClearKC */,
+				06C1538124DAA87B00E6711E /* Frameworks */,
+				06C1538024DAA87B00E6711E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		06C1538024DAA87B00E6711E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06C1537F24DAA87B00E6711E /* ClearKC */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		06C1538124DAA87B00E6711E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06C1539524DAA9DD00E6711E /* libsqlite3.tbd */,
+				06C1538224DAA87B00E6711E /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		06C1538424DAA87B00E6711E /* ClearKC */ = {
+			isa = PBXGroup;
+			children = (
+				06C1538824DAA87B00E6711E /* monkeydev.entitlements */,
+				06C1538C24DAA87B00E6711E /* main.m */,
+				06C1538524DAA87B00E6711E /* Package */,
+				06C1538E24DAA87B00E6711E /* Supporting Files */,
+			);
+			path = ClearKC;
+			sourceTree = "<group>";
+		};
+		06C1538524DAA87B00E6711E /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				06C1538624DAA87B00E6711E /* DEBIAN */,
+				06C1538924DAA87B00E6711E /* usr */,
+			);
+			path = Package;
+			sourceTree = "<group>";
+		};
+		06C1538624DAA87B00E6711E /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				06C1538724DAA87B00E6711E /* control */,
+			);
+			path = DEBIAN;
+			sourceTree = "<group>";
+		};
+		06C1538924DAA87B00E6711E /* usr */ = {
+			isa = PBXGroup;
+			children = (
+				06C1538A24DAA87B00E6711E /* bin */,
+			);
+			path = usr;
+			sourceTree = "<group>";
+		};
+		06C1538A24DAA87B00E6711E /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				06C1538B24DAA87B00E6711E /* 0xdeadfa11 */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		06C1538E24DAA87B00E6711E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				06C1538F24DAA87B00E6711E /* ClearKC-Prefix.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		06C1537E24DAA87B00E6711E /* ClearKC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06C1539224DAA87B00E6711E /* Build configuration list for PBXNativeTarget "ClearKC" */;
+			buildPhases = (
+				06C1537B24DAA87B00E6711E /* Sources */,
+				06C1537C24DAA87B00E6711E /* Frameworks */,
+				06C1537D24DAA87B00E6711E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClearKC;
+			productName = ClearKC;
+			productReference = 06C1537F24DAA87B00E6711E /* ClearKC */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		06C1537724DAA87B00E6711E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1110;
+				TargetAttributes = {
+					06C1537E24DAA87B00E6711E = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = 06C1537A24DAA87B00E6711E /* Build configuration list for PBXProject "ClearKC" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 06C1537624DAA87B00E6711E;
+			productRefGroup = 06C1538024DAA87B00E6711E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				06C1537E24DAA87B00E6711E /* ClearKC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06C1537D24DAA87B00E6711E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06C1537B24DAA87B00E6711E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06C1538D24DAA87B00E6711E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		06C1539024DAA87B00E6711E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"ClearKC\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		06C1539124DAA87B00E6711E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"ClearKC\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		06C1539324DAA87B00E6711E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = ClearKC/monkeydev.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RKUDB433U9;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ClearKC/ClearKC-Prefix.pch";
+				INSTALL_PATH = /usr/bin;
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = 127.0.0.1;
+				MonkeyDevDevicePassword = alpine;
+				MonkeyDevDevicePort = 1025;
+				MonkeyDevInstallOnAnyBuild = YES;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		06C1539424DAA87B00E6711E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = ClearKC/monkeydev.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RKUDB433U9;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ClearKC/ClearKC-Prefix.pch";
+				INSTALL_PATH = /usr/bin;
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = 127.0.0.1;
+				MonkeyDevDevicePassword = alpine;
+				MonkeyDevDevicePort = 1025;
+				MonkeyDevInstallOnAnyBuild = YES;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06C1537A24DAA87B00E6711E /* Build configuration list for PBXProject "ClearKC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06C1539024DAA87B00E6711E /* Release */,
+				06C1539124DAA87B00E6711E /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06C1539224DAA87B00E6711E /* Build configuration list for PBXNativeTarget "ClearKC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06C1539324DAA87B00E6711E /* Release */,
+				06C1539424DAA87B00E6711E /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 06C1537724DAA87B00E6711E /* Project object */;
+}

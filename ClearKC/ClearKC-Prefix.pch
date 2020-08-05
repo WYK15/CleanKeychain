@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'ClearKC' target in the 'ClearKC' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
